@@ -1,0 +1,125 @@
+/* Base Styles (for Mobile Devices) */
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+}
+
+.profile-header {
+  margin-bottom: 25px;
+}
+
+.profile-icon {
+  font-size: 60px;
+  color: #6b73ff;
+  margin-bottom: 15px;
+}
+
+.profile-title {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.error-message,
+.loading-message {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* --- NEW STYLES FOR THE LOGOUT BUTTON --- */
+/* New styles for the logout button container */
+.profile-actions {
+  margin-top: 20px;
+  /* Add these three lines to center the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-button {
+  /* Match the blue color from your UI */
+  background-color: #6b73ff; 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+  /* Add flexbox to align icon and text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.logout-icon {
+  font-size: 18px;
+}
+
+.logout-button:hover {
+  background-color: #000dff;
+  transform: translateY(-2px);
+}
+
+.logout-button:active {
+  transform: translateY(0);
+}
+/* --- END OF NEW STYLES --- */
+
+/* --- Media Queries for Responsiveness --- */
+@media (min-width: 600px) and (max-width: 768px) {
+  .profile-container {
+    padding: 40px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 769px) {
+  .profile-container {
+    padding: 50px;
+    max-width: 550px;
+  }
+
+  .profile-icon {
+    font-size: 80px;
+  }
+
+  .profile-title {
+    font-size: 36px;
+  }
+
+  .profile-subtitle {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,157 @@
+/* Base Styles (for Mobile Devices) */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.register-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-input:focus {
+  border-color: #6b73ff;
+}
+
+.input-error {
+  border-color: #e74c3c !important;
+  background-color: #fff5f5 !important;
+}
+
+.form-error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Corrected CSS for Password Input and Eye Icon Layout */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Buttons */
+.submit-button {
+  width: 100%;
+  background: #6b73ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background: #5a62e0;
+}
+
+.google-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.google-button:hover {
+  background: #f0f0f0;
+}
+
+/* Links */
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link-anchor {
+  color: #6b73ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link-anchor:hover {
+  text-decoration: underline;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet & Smaller Desktop Screens (up to 768px) */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px;
+    width: 90%;
+  }
+
+  .register-title {
+    font-size: 26px;
+  }
+}
+
+/* Larger Desktop Screens (min-width: 769px) */
+@media (min-width: 769px) {
+  .register-container {
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .register-title {
+    font-size: 32px;
+  }
+}
