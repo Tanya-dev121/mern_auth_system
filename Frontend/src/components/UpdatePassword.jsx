@@ -13,7 +13,7 @@ import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
-import "./UpdatePassword.css";
+import "./updatePassword.css";
 
 export default function UpdatePassword() {
   const navigate = useNavigate();
