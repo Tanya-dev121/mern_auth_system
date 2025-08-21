@@ -80,7 +80,7 @@ app.get(
     res.cookie("accessToken", accessToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production", // Set to true in production
-      sameSite: "lax",
+      sameSite: "None",
       maxAge: 1000 * 60 * 60 * 24 * 7,
     });
     res.redirect(`${process.env.CLIENT_URL}/profile`);
