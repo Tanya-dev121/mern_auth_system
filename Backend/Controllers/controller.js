@@ -80,7 +80,7 @@ export const ForgotPassRoute = async (req, res) => {
 
     await existingUser.save();
 
-    const resetURL = `${CLIENT_URL}/updatePassword?token=${resetToken}`;
+    const resetURL = `${process.env.CLIENT_URL}/updatePassword?token=${resetToken}`;
 
     const transporter = nodemailer.createTransport({
       service: "Gmail",
